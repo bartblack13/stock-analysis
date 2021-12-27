@@ -5,18 +5,18 @@ The purpose of this project was to gain familiarity with using the Microsoft Exc
 * initializing variable of different types
 * using loops to automatically loop through large data sets, including nested loops
 * using conditional arguments
-  a) "if-then" statements
-  b) and/or statements
+  * 1) "if-then" statements
+  * 2) and/or statements
 * initiallizing and using arrays and indexes to make writing and executing code more efficient
 * reusing, debugging, and commenting on code
 * formatting outputs
-    a) fonts, interior, cell color, etc
-    b) number formats
-    c) conditional formatting
+  * 1) fonts, interior, cell color, etc
+  * 2) number formats
+  * 3) conditional formatting
 * creating and using:
-    a) Message Boxes
-    b) user input boxes
-    c) creating user friendly buttons
+  * 1) Message Boxes
+  * 2) user input boxes
+  * 3) creating user friendly buttons
 * measuring code performance via embedded timer
 * refactoring code
 
@@ -24,16 +24,32 @@ The purpose of this project was to gain familiarity with using the Microsoft Exc
 ## Results
 The goal of this project was to analyze stock performance data from 12 different green energy companies for the years 2017 and 2018 for a "friend" named Steve.  Steve's parents were interested in investing into the company DAQO (Ticker: DQ), but were open to other companies that might be a better investment.
 
-The stock data that was provided included daily trade volume and daily pricing (open, high, low, close); a years worth of daily trade info across multiple variables for 12 stocks (3012 rows of data), for two separate years.  By writing VBA macros, I was able to analyze each dataset in aproximately 4.5sec., and automatically generate a table displaying "total daily volume" and "percent return", with positive returns highlighted in green and negative returns in red (see below for tables and figures).  I was also able to write a partially successful program, which was capabale of performing the above anlysis and table generation in between 1.27-1.37sec (see figures below).
+The stock data that was provided included daily trade volume and daily pricing (open, high, low, close); a year's worth of daily trade info across multiple variables for 12 stocks (3012 rows of data), for two separate years.  By writing VBA macros, I was able to analyze each dataset in aproximately 4.5sec., and automatically generate a table displaying "total daily volume" and "percent return", with positive returns highlighted in green and negative returns in red (see below for tables and figures).  I was also able to write a partially successful program, which was capabale of performing the above anlysis and table generation in between 1.27-1.37sec (see figures below).  The refactored macro needs to be adjusted to generate the correct outputs.
 
 In 2017, DAQO had a positive return of 199.4%, but had a negative return of 62.6%.  Across both years, they increased their total daily volume from 35,796,200 - 107,873,900, which shows that interest in the stock has increased, indicating that their company might have a favorable next year.  However, this would require a bounce back, which is risky.  It would be a better to consider some of the other stocks that were analyzed.
 
-Of the 12 stocks, only 2 stocks had positive returns for the year 2018, which were ENPH and RUN.  In 2017, only one stock had a negative return which was **not** either ENPH of RUN.  From the start of 2017 to the end of 2018, ENPH stock increase from $1.05/share to $4.73/share (+350.5% return), and almost trippled their total daily volume by years end.  Across the two years, RUN increased their stock price from $5.59/share to $10.89/share (+83.95% return), aproximately doubled their total daily volume.  Both companies have substantially higher trading volume than DAQO, which suggests that thier is more investor interest in ENPH and RUN than DAQO.  However, ENPH and RUN have single digit prices per share, across the 2yr timeframe, which is usually seen in companies that are new to the public exchange markets.  The lower price per share, meansthat Steve's parents could either invest less money, or they could buy more shares for the same money and have a higher yield if the companies value takes off.
+Of the 12 stocks, only 2 stocks had positive returns for the year 2018, which were ENPH and RUN.  In 2017, only one stock had a negative return which was **not** either ENPH of RUN.  From the start of 2017 to the end of 2018, ENPH stock increased from $1.05/share to $4.73/share (+350.5% return), and almost trippled their total daily volume by year's end.  Across the two years, RUN increased their stock price from $5.59/share to $10.89/share (+83.95% return), aproximately doubling their total daily volume.  Both companies have substantially higher trading volume than DAQO, which suggests that there is more investor interest in ENPH and RUN than DAQO.  However, ENPH and RUN have single digit prices per share, across the 2yr timeframe, which is usually seen in companies that are new to the public exchange markets.  The lower price per share would allow Steve's parents either to invest less money, or they could buy more shares for the same money and have a higher yield if the companies value takes off.
 
 **Conclusion:** Considering this initial and basic stock analysis, Steve's parents would be much wiser to invest in either RUN or ENPH, rather than DAQO.  
 
 
-embed picture (2017 and 2018 output graphs)
+
+**2017 analysis original macro**
+![This is an image](https://github.com/bartblack13/stock-analysis/blob/main/2017%20Stock%20Analysis.png)
+
+
+**2018 analysis original macro**
+![This is an image](https://github.com/bartblack13/stock-analysis/blob/main/2018%20Stock%20Analysis.png)
+
+
+**2017 analysis refactored macro**
+![This is an image](https://github.com/bartblack13/stock-analysis/blob/main/VBA_Challenge_2017.png)
+
+
+**2017 analysis refactored macro**
+![This is an image](https://github.com/bartblack13/stock-analysis/blob/main/VBA_Challenge_2018.png)
+
+
 
 ## Summary
 In a summary statement, address the following questions.
